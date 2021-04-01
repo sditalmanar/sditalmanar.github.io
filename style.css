@@ -29,6 +29,14 @@
   }
   .gutter {
     cursor: e-resize;
-    height: 100%;
+    height: 95%;
     background: grey;
+  }
+.navbar {
+      border: 1px solid black;
+      background-color: lightblue;
+      padding-top: 0px;
+      padding-right: 30px;
+      padding-bottom: 0px;
+      padding-left: 30px;
   }
