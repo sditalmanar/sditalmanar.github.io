@@ -23,16 +23,19 @@
     background: white;
     background-attachment: fixed;
   }
+
   .b {
     background: white;
     background-attachment: fixed;
   }
+
   .gutter {
     cursor: e-resize;
     height: 95%;
     background: grey;
   }
-.navbar {
+
+  .navbar {
       border: 1px solid black;
       background-color: lightblue;
       padding-top: 0px;
