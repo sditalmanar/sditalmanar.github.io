@@ -120,3 +120,17 @@ select {
 .form-dropdown {
   font-size: 14px;
 }
+
+.demo{
+  background-color:red;
+  color: yellow;
+  font-size:20px;
+  text-align:center;
+}
+
+.valign {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
