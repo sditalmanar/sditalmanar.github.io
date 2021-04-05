@@ -587,7 +587,7 @@
         <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
         <script>
             Split(['.a', '.b'], {
-              gutterSize: 5,
+              gutterSize: 10,
               sizes: [50,50]
             });
         </script>
@@ -599,7 +599,7 @@
             const btnLoading = document.querySelector('.btn-loading');
             const myAlert = document.querySelector('.alert');
         
-            form.addEventListener('submit', (e) => {
+            form.addEventListener('submit', e => {
             e.preventDefault();
 
                 btnLoading.classList.toggle('d-none');
