@@ -2,6 +2,7 @@
 <html>
 
     <head>
+        <title>Ujian Coba US Jam 1</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
@@ -11,7 +12,6 @@
     </head>
 
     <body>
-        
           
         <div class="text-center"><h3>UJI COBA UJIAN SEKOLAH SDIT AL MANAR</h3></div>
 
@@ -19,7 +19,7 @@
 
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 5, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 6, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -43,7 +43,7 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
+                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir tidak dapat disimpan.";
                 var elem = document.getElementById('submit');
                 elem.parentNode.removeChild(elem);
                 return false;
@@ -67,7 +67,7 @@
                     <tr>
                         <td>
                             <!-- UBAH SOAL -->
-                            <iframe  style="width: 100%; min-height: 540px;" src="https://onedrive.live.com/embed?cid=661547EA62301C80&resid=661547EA62301C80%21128236&authkey=AI8Tu_lPbl3AmTI&em=2"></iframe>
+                            <embed src="https://sditalmanar.github.io/Soal US.pdf" width="625px" height="530px" />
                         </td>
                     </tr>
                 </table>
@@ -589,9 +589,8 @@
             const form = document.forms['try-out-online-2021'];
             const btnKirim = document.querySelector('.btn-kirim');
             const btnLoading = document.querySelector('.btn-loading');
-            const myAlert = document.querySelector('.alert');
         
-            form.addEventListener('submit', (e) => {
+            form.addEventListener('submit', e => {
             e.preventDefault();
 
                 btnLoading.classList.toggle('d-none');
