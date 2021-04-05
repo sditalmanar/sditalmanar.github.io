@@ -2,8 +2,8 @@
 <html>
 
     <head>
-        <title>Ujian Coba US Jam 1</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -12,6 +12,7 @@
     </head>
 
     <body>
+        
           
         <div class="text-center"><h3>UJI COBA UJIAN SEKOLAH SDIT AL MANAR</h3></div>
 
@@ -19,7 +20,7 @@
 
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 6, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 6, 2021 12:00:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -43,7 +44,7 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir tidak dapat disimpan.";
+                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
                 var elem = document.getElementById('submit');
                 elem.parentNode.removeChild(elem);
                 return false;
@@ -65,9 +66,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <!-- UBAH SOAL -->
-                            <p><embed src="https://sditalmanar.github.io/Soal PTS.pdf" width="625px" height="554px" /></p>
+                        <td class="scrolling-box" align="center"><!-- UBAH SOAL -->
+                            <img src="IPS (1).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (2).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (3).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (4).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (5).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (6).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (7).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="IPS (8).jpg" alt="Nature" class="responsive" width="600" height="400">
                         </td>
                     </tr>
                 </table>
@@ -589,8 +596,9 @@
             const form = document.forms['try-out-online-2021'];
             const btnKirim = document.querySelector('.btn-kirim');
             const btnLoading = document.querySelector('.btn-loading');
+            const myAlert = document.querySelector('.alert');
         
-            form.addEventListener('submit', e => {
+            form.addEventListener('submit', (e) => {
             e.preventDefault();
 
                 btnLoading.classList.toggle('d-none');
