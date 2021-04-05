@@ -29,12 +29,6 @@ body {
   background-attachment: fixed;
 }
 
-.gutter {
-  cursor: e-resize;
-  height: 100%;
-  background: grey;
-}
-
 .text-center {
     border: 1px solid black;
     background-color: lightblue;
