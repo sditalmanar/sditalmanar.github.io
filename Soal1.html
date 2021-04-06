@@ -13,14 +13,13 @@
 
     <body>
         
-          
         <div class="text-center"><h3>UJI COBA UJIAN SEKOLAH SDIT AL MANAR</h3></div>
 
-        <div class="demo" id="habis">Time left = <span id="timer"></span></div>
+        <div class="demo" id="habis">SISA WAKTU = <span id="timer"></span></div>
 
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 6, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 7, 2021 07:30:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -38,8 +37,8 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
             // Output the result in an element with id="demo"
-            document.getElementById("timer").innerHTML = hours + "h "
-            + minutes + "m " + seconds + "s ";
+            document.getElementById("timer").innerHTML = hours + "j "
+            + minutes + "m " + seconds + "d ";
                 
             // If the count down is over, write some text 
             if (distance < 0) {
@@ -67,24 +66,25 @@
                     </tr>
                     <tr>
                         <td class="scrolling-box" align="center"><!-- UBAH SOAL -->
-                            <img src="MTK (1).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (2).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (3).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (4).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (5).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (6).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (7).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (8).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="MTK (9).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (1).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (2).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (3).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (4).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (5).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (6).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (7).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (8).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (9).jpg" alt="Nature" class="responsive" width="600" height="400">
+                            <img src="PAI (10).jpg" alt="Nature" class="responsive" width="600" height="400">
                         </td>
                     </tr>
                 </table>
             </div>
-            <div class="cell b">
-                <table border="1" width="100%" align="center" class="tableUserInfo">
+            <div class="cell b" >
+                <table border="1" width="100%" align="center" class="tableUserInfo" >
                     <tr>
                         <td align="center">
-                            <h5>LEMBAR JAWABAN</h5>   
+                            <h5>LEMBAR JAWABAN </h5>    
                         </td>
                     </tr>
                     <tr>
@@ -181,12 +181,11 @@
 
                                 <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" style="width:180px" data-component="dropdown" aria-labelledby="label_5">
 
-                            
                                 <select class="form-dropdown col-75" id="input_6" name="mata uji" style="width:180px" data-component="dropdown" aria-labelledby="label_6">
                                     <option value=""> Pilih mata pelajaran </option>
                                     <option value="Bahasa Indonesia"> Bahasa Indonesia </option>
                                     <option value="Bahasa Inggris"> Bahasa Inggris </option>
-                                    <option value="IPA"> IPA </option>
+                                    <option value="PAI"> PAI </option>
                                     <option value="IPS"> IPS </option>
                                     <option value="Matematika"> Matematika </option>
                                     <option value="PAI"> PAI </option>
@@ -194,6 +193,7 @@
                                     <option value="PKN"> PKN </option>
                                     <option value="SBdP"> SBdP </option>
                                 </select>
+                                <hr style="height: 5px; color: black;">
 
                             <p>PILIHAN GANDA</p>
                             
@@ -518,6 +518,8 @@
                                 <option class="blueText" value="D" >D</option>
                             </select></p>
 
+                            <button type="submit" class="btn success" id="submit">Simpan jawaban PG kamu!</button>
+
                             <p>ISIAN</p>
                             
                             <div class="container">
@@ -543,6 +545,8 @@
                                 </div>
                             </div>
 
+                            <button type="submit" class="btn success" id="submit">Simpan jawaban Isian kamu!</button>
+
                             <p>ESSAY</p>
                             
                             <div class="container">
@@ -567,18 +571,11 @@
                                     <textarea name="essay 5" class="textinput2">5.</textarea>
                                 </div>
                             </div>
-                        
 
-                        <button type="submit" class="btn btn-primary btn-kirim" id="submit">Save</button>
-
-                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            Saving...
-                          </button>
-
+                        <button type="submit" class="btn success" id="submit">Simpan jawaban Essay kamu!</button>
                     </form>
 
-                        </td>
+                    </td>
                     </tr>
                 </table>
             </div>
@@ -587,33 +584,32 @@
         <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
         <script>
             Split(['.a', '.b'], {
-              gutterSize: 10,
-              sizes: [50,50]
+              gutterSize: 5,
+              sizes: [50,50],
+              minSize: [548,548]
             });
         </script>
 
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzL3av-yU_47v9a-nYTRaVFBT35OkeRjLXbJ_i_-MlyQcGSvhSb4tH9pW-nu6sizH95rQ/exec'
             const form = document.forms['try-out-online-2021'];
-            const btnKirim = document.querySelector('.btn-kirim');
-            const btnLoading = document.querySelector('.btn-loading');
-            const myAlert = document.querySelector('.alert');
         
             form.addEventListener('submit', e => {
             e.preventDefault();
 
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
-
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
 
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
+                alert("Jawaban kamu telah tersimpan.");
 
                 console.log('Success!', response)
                 })
-                .catch(error => console.error('Error!', error.message))
+                .catch(error => {
+                
+                alert("Jawaban kamu gagal tersimpan.");
+                
+                console.error('Error!', error.message)
+                })
             })
         </script>
     </body>
