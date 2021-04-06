@@ -2,6 +2,7 @@
 <html>
 
     <head>
+        <TItle>Soal 2 - Ujian Online SDIT Al Manar</TItle>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
@@ -17,9 +18,11 @@
 
         <div class="demo" id="habis">SISA WAKTU = <span id="timer"></span></div>
 
+        <!-- SETTING WAKTU SELESAI UJIAN KE-2 -->
+
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 7, 2021 10:00:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 7, 2021 12:00:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -43,7 +46,7 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban terakhir kamu tidak dapat disimpan.";
+                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
                 var elem = document.getElementById('submit');
                 elem.parentNode.removeChild(elem);
                 return false;
@@ -64,18 +67,23 @@
                             <h5>SOAL</h5>
                         </td>
                     </tr>
+
+                     <!-- SETTING IMAGE SOAL KE-2 -->
+
                     <tr>
-                        <td class="scrolling-box" align="center"><!-- UBAH SOAL -->
-                            <img src="PAI (1).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (2).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (3).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (4).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (5).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (6).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (7).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (8).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (9).jpg" alt="Nature" class="responsive" width="600" height="400">
-                            <img src="PAI (10).jpg" alt="Nature" class="responsive" width="600" height="400">
+                        <td class="scrolling-box" align="center"><!-- UBAH IMAGE SOAL -->
+                            <img src="IPA (1).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (2).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (3).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (4).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (5).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (6).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (7).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (8).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (9).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (10).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (11).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="IPA (12).jpg" alt="Soal" class="responsive" width="600" height="400">
                         </td>
                     </tr>
                 </table>
@@ -185,10 +193,10 @@
                                     <option value=""> Pilih mata pelajaran </option>
                                     <option value="Bahasa Indonesia"> Bahasa Indonesia </option>
                                     <option value="Bahasa Inggris"> Bahasa Inggris </option>
-                                    <option value="PAI"> PAI </option>
+                                    <option value="IPA"> IPA </option>
                                     <option value="IPS"> IPS </option>
                                     <option value="Matematika"> Matematika </option>
-                                    <option value="PAI"> PAI </option>
+                                    <option value="IPA"> IPA </option>
                                     <option value="PJOK"> PJOK </option>
                                     <option value="PKN"> PKN </option>
                                     <option value="SBdP"> SBdP </option>
@@ -518,7 +526,7 @@
                                 <option class="blueText" value="D" >D</option>
                             </select></p>
 
-                            <button type="submit" class="btn success" id="submit">Simpan jawaban PG kamu!</button>
+                            <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban PG.</button>
 
                             <p>ISIAN</p>
                             
@@ -545,7 +553,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn success" id="submit">Simpan jawaban Isian kamu!</button>
+                            <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban Isian.</button>
 
                             <p>ESSAY</p>
                             
@@ -572,7 +580,7 @@
                                 </div>
                             </div>
 
-                        <button type="submit" class="btn success" id="submit">Simpan jawaban Essay kamu!</button>
+                        <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban Essay.</button>
                     </form>
 
                     </td>
@@ -606,7 +614,7 @@
                 })
                 .catch(error => {
                 
-                alert("Jawaban kamu gagal tersimpan.");
+                alert("Jawaban kamu gagal tersimpan. Harap Screenshoot jawaban kamu saat ini!");
                 
                 console.error('Error!', error.message)
                 })
