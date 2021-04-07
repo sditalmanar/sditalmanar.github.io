@@ -44,11 +44,17 @@
             + minutes + "m " + seconds + "d ";
                 
             // If the count down is over, write some text 
-            if (distance < 0) {
+           if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
-                var elem = document.getElementById('submit');
-                elem.parentNode.removeChild(elem);
+                var elem1 = document.getElementById('submitPG');
+                elem1.parentNode.removeChild(elem1);
+                
+                var elem2 = document.getElementById('submitIsian');
+                elem2.parentNode.removeChild(elem2);
+
+                var elem3 = document.getElementById('submitEssay');
+                elem3.parentNode.removeChild(elem3);
                 return false;
             }
 
