@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <Title>Soal 1 - Ujian Online SDIT Al Manar</Title>
+        <TItle>Soal 1 - Ujian Online SDIT Al Manar</TItle>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
@@ -22,7 +22,7 @@
 
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 7, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 8, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -44,7 +44,7 @@
             + minutes + "m " + seconds + "d ";
                 
             // If the count down is over, write some text 
-           if (distance < 0) {
+            if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
                 var elem1 = document.getElementById('submitPG');
@@ -78,18 +78,18 @@
 
                     <tr>
                         <td class="scrolling-box" align="center"><!-- UBAH IMAGE SOAL -->
-                            <img src="PAI (1).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (2).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (3).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (4).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (5).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (6).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (7).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (8).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="PAI (9).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <!--img src="PAI (10).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="PAI (11).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="PAI (12).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <img src="Bing (1).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="Bing (2).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="Bing (3).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="Bing (4).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="Bing (5).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="Bing (6).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <!--img src="Bing (7).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="Bing (8).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="Bing (9).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="Bing (10).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="Bing (11).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="Bing (12).jpg" alt="Soal" class="responsive" width="600" height="400"-->
                         </td>
                     </tr>
                 </table>
@@ -532,7 +532,7 @@
                                 <option class="blueText" value="D" >D</option>
                             </select></p>
 
-                            <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban PG.</button>
+                            <button type="submit" class="btn success" id="submitPG">Klik sekali saja untuk menyimpan jawaban PG.</button>
 
                             <p>ISIAN</p>
                             
@@ -559,7 +559,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban Isian.</button>
+                            <button type="submit" class="btn success" id="submitIsian">Klik sekali saja untuk menyimpan jawaban Isian.</button>
 
                             <p>ESSAY</p>
                             
@@ -586,7 +586,7 @@
                                 </div>
                             </div>
 
-                        <button type="submit" class="btn success" id="submit">Klik sekali saja untuk menyimpan jawaban Essay.</button>
+                        <button type="submit" class="btn success" id="submitEssay">Klik sekali saja untuk menyimpan jawaban Essay.</button>
                     </form>
 
                     </td>
