@@ -1,161 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <TItle>Ujian Online SDIT Al Manar</TItle>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <Link rel="stylesheet" type="text/css" href="style.css">
+	<title>Ujian Online SDIT Al Manar</title>
+	<link rel="stylesheet" type="text/css" href="style 2.css">
 </head>
 <body>
+	
+	<!-- bagian header template -->
+	<header>
+        <img src="almanar.png" alt="Cinque Terre" width="110" height="110" style="margin-top: 5px;">
+		<h1 class="judul" style="margin: auto;">UJI COBA UJIAN SEKOLAH 2021</h1>
+		<p class="deskripsi">Pelaksanaan dari tanggal 5 April 2021 s/d 9 April 2021</p>
+	</header>
+	<!-- akhir bagian header template -->
+	
+	<div class="wrap">
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<h2>Soal Hari Ini</h2>
+                <hr>
+				    <p style="text-align: center;">
+                    <button id="jam1" type="button" class="btn btn-outline-warning btn-lg">Soal 1 akan terbuka <br><span id="timer1"></span> lagi</button></p>
+                    <p style="text-align: center;">
+                    <button id="jam2" type="button" class="btn btn-outline-warning btn-lg">Soal 2 akan terbuka <br><span id="timer2"></span> lagi</button></p>
+			</div>
+			<div class="widget">
+				<h2>Kata Motivasi</h2>
+                <hr>
+				<p>"Allah tidak berfirman bahwa hidup ini mudah, tapi Allah berfirman bahwa pada setiap kesulitan akan ada kemudahan."</p>
+			</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+ 
+		<!-- bagian konten Blog -->
+		<div class="blog">
+			<div class="conteudo">
+				<h1 style="font-size: 24px;"> PETUNJUK SINGKAT UJIAN ONLINE </h1>
+				<hr>
+				<ul style="text-align: left; font-size: 24px;">
+                    <li>Berdoa sebelum mengerjakan soal.</li>
+                    <li>Waktu yang disediakan 120 menit.</li>
+                    <li>Teliti dalam mengerjakan soal dan tidak terburu-buru.</li>
+                    <li>Simpan lah pekerjaan kamu dengan cara klik tombol penyimpanan yang telah disediakan.</li>
+                    <li><strong>PERHATIAN!</strong> Tombol simpan akan hilang setelah waktu habis.</li>
+                    <li>Ucapkan Hamdalah setelah selesai mengerjakan soal.</li>
+                  </ul>
+			</div>
+		<!-- akhir bagian konten Blog -->
+	</div>
 
-<div class="container valign">
-  <img style="margin-top: 2%;" src="almanar.png" alt="Cinque Terre" width="110" height="110" class="mx-auto d-block">
-  <h1 style="text-align: center; margin-top: auto;">UJI COBA UJIAN SEKOLAH 2021</h1>
-    <div class="child">
-      <h3 style="text-align: center; margin-top: 1%;">PETUNJUK SINGKAT UJIAN ONLINE</h3>
-      <ul class="list-unstyled">
-          <ul style="text-align: left; font-size: 24px;">
-            <li>Berdoa sebelum mengerjakan soal.</li>
-            <li>Waktu yang disediakan 120 menit.</li>
-            <li>Teliti dalam mengerjakan soal dan tidak terburu-buru.</li>
-            <li>Simpan lah pekerjaan kamu dengan cara klik tombol penyimpanan yang telah disediakan.</li>
-            <li><strong>PERHATIAN!</strong> Tombol simpan akan hilang setelah waktu habis.</li>
-            <li>Ucapkan Hamdalah setelah selesai mengerjakan soal.</li>
-          </ul>
-        </li>
-      </ul>
+    <!-- SETTING WAKTU UJIAN KE-1 -->
 
-    </div>
-  <p style="text-align: center;">
-  <button id="jam1" type="button" class="btn btn-outline-warning btn-lg">Soal 1 akan terbuka <br><span id="timer1"></span> lagi</button>
-  <button id="jam2" type="button" class="btn btn-outline-warning btn-lg">Soal 2 akan terbuka <br><span id="timer2"></span> lagi</button></p>
-</div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate1 = new Date("April 8, 2021 07:30:00").getTime(); // SESUAIKAN WAKTU
 
-        <!-- SETTING WAKTU UJIAN KE-1 -->
+        // Update the count down every 1 second
+        var x1 = setInterval(function() {
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate1 = new Date("April 7, 2021 07:30:00").getTime(); // SESUAIKAN WAKTU
+        // Get today's date and time
+        var now1 = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance1 = countDownDate1 - now1;
 
-            // Update the count down every 1 second
-            var x1 = setInterval(function() {
+         // Time calculations for days, hours, minutes and seconds
+         var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+        var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("timer1").innerHTML = hours1 + "j " + minutes1 + "m " + seconds1 + "d ";
+            
+        // If the count down is over, write some text 
+        var str1 = "Soal Jam 1";
+        var link1 = str1.link("https://sditalmanar.github.io/Soal1.html");
+        if (distance1 < 0) {
+            clearInterval(x1);
+            document.getElementById("jam1").innerHTML = link1;
+        }
 
-            // Get today's date and time
-            var now1 = new Date().getTime();
-                
-            // Find the distance between now and the count down date
-            var distance1 = countDownDate1 - now1;
+        }, 1000);
+    </script>
 
-             // Time calculations for days, hours, minutes and seconds
-             var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
-            var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
-                
-            // Output the result in an element with id="demo"
-            document.getElementById("timer1").innerHTML = hours1 + "j " + minutes1 + "m " + seconds1 + "d ";
-                
-            // If the count down is over, write some text 
-            var str1 = "Soal Jam 1";
-            var link1 = str1.link("https://sditalmanar.github.io/Soal1.html");
-            if (distance1 < 0) {
-                clearInterval(x1);
-                document.getElementById("jam1").innerHTML = link1;
-            }
+    <!-- SETTING WAKTU UJIAN KE-2 -->
 
-            }, 1000);
-        </script>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate2 = new Date("April 8, 2021 10:00:00").getTime(); // SESUAIKAN WAKTU
 
-        <!-- SETTING WAKTU UJIAN KE-2 -->
+      // Update the count down every 1 second
+      var x2 = setInterval(function() {
 
-        <script>
-          // Set the date we're counting down to
-          var countDownDate2 = new Date("April 7, 2021 10:00:00").getTime(); // SESUAIKAN WAKTU
+      // Get today's date and time
+      var now2 = new Date().getTime();
+          
+      // Find the distance between now and the count down date
+      var distance2 = countDownDate2 - now2;
 
-          // Update the count down every 1 second
-          var x2 = setInterval(function() {
+      // Time calculations for days, hours, minutes and seconds
+      var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+      var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+          
+      // Output the result in an element with id="demo"
+      document.getElementById("timer2").innerHTML = hours2 + "j " + minutes2 + "m " + seconds2 + "d ";
+          
+      // If the count down is over, write some text 
+      var str2 = "Soal Jam 2";
+      var link2 = str2.link("https://sditalmanar.github.io/Soal2.html");
+      if (distance2 < 0) {
+          clearInterval(x2);
+          document.getElementById("jam2").innerHTML = link2;
+      }
 
-          // Get today's date and time
-          var now2 = new Date().getTime();
-              
-          // Find the distance between now and the count down date
-          var distance2 = countDownDate2 - now2;
+      }, 1000);
+    </script>
 
-          // Time calculations for days, hours, minutes and seconds
-          var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
-          var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
-              
-          // Output the result in an element with id="demo"
-          document.getElementById("timer2").innerHTML = hours2 + "j " + minutes2 + "m " + seconds2 + "d ";
-              
-          // If the count down is over, write some text 
-          var str2 = "Soal Jam 2";
-          var link2 = str2.link("https://sditalmanar.github.io/Soal2.html");
-          if (distance2 < 0) {
-              clearInterval(x2);
-              document.getElementById("jam2").innerHTML = link2;
-          }
+    <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-1 -->
 
-          }, 1000);
-        </script>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate3 = new Date("April 8, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
 
-        <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-1 -->
+      // Update the count down every 1 second
+      var x3 = setInterval(function() {
 
-        <script>
-          // Set the date we're counting down to
-          var countDownDate3 = new Date("April 7, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+      // Get today's date and time
+      var now3 = new Date().getTime();
+          
+      // Find the distance between now and the count down date
+      var distance3 = countDownDate3 - now3;
+          
+      // If the count down is over, write some text 
+      if (distance3 < 0) {
+            clearInterval(x3);
+            var elem3 = document.getElementById('jam1');
+            elem3.parentNode.removeChild(elem3);
+            return false;
+      }
 
-          // Update the count down every 1 second
-          var x3 = setInterval(function() {
+      }, 1000);
+    </script>
 
-          // Get today's date and time
-          var now3 = new Date().getTime();
-              
-          // Find the distance between now and the count down date
-          var distance3 = countDownDate3 - now3;
-              
-          // If the count down is over, write some text 
-          if (distance3 < 0) {
-                clearInterval(x3);
-                var elem3 = document.getElementById('jam1');
-                elem3.parentNode.removeChild(elem3);
-                return false;
-          }
+    <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-2 -->
 
-          }, 1000);
-        </script>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate4 = new Date("April 8, 2021 12:00:00").getTime(); // SESUAIKAN WAKTU
 
-        <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-2 -->
+      // Update the count down every 1 second
+      var x4 = setInterval(function() {
 
-        <script>
-          // Set the date we're counting down to
-          var countDownDate4 = new Date("April 7, 2021 12:00:00").getTime(); // SESUAIKAN WAKTU
+      // Get today's date and time
+      var now4 = new Date().getTime();
+          
+      // Find the distance between now and the count down date
+      var distance4 = countDownDate4 - now4;
+          
+      // If the count down is over, write some text 
+      if (distance4 < 0) {
+            clearInterval(x3);
+            var elem4 = document.getElementById('jam2');
+            elem4.parentNode.removeChild(elem4);
+            return false;
+      }
 
-          // Update the count down every 1 second
-          var x4 = setInterval(function() {
-
-          // Get today's date and time
-          var now4 = new Date().getTime();
-              
-          // Find the distance between now and the count down date
-          var distance4 = countDownDate4 - now4;
-              
-          // If the count down is over, write some text 
-          if (distance4 < 0) {
-                clearInterval(x3);
-                var elem4 = document.getElementById('jam2');
-                elem4.parentNode.removeChild(elem4);
-                return false;
-          }
-
-          }, 1000);
-        </script>
-      
+      }, 1000);
+    </script>
+ 
 </body>
 </html>
