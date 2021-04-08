@@ -22,7 +22,7 @@
 
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 8, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+            var countDownDate = new Date("April 9, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -46,7 +46,7 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu terakhir kamu tidak dapat disimpan.";
+                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban terakhir kamu tidak dapat disimpan.";
                 var elem1 = document.getElementById('submitPG');
                 elem1.parentNode.removeChild(elem1);
                 
@@ -78,18 +78,18 @@
 
                     <tr>
                         <td class="scrolling-box" align="center"><!-- UBAH IMAGE SOAL -->
-                            <img src="Bing (1).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="Bing (2).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="Bing (3).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="Bing (4).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="Bing (5).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <img src="Bing (6).jpg" alt="Soal" class="responsive" width="600" height="400">
-                            <!--img src="Bing (7).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="Bing (8).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="Bing (9).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="Bing (10).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="Bing (11).jpg" alt="Soal" class="responsive" width="600" height="400"-->
-                            <!--img src="Bing (12).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <img src="SBdP (1).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (2).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (3).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (4).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (5).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (6).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (7).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (8).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (9).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <img src="SBdP (10).jpg" alt="Soal" class="responsive" width="600" height="400">
+                            <!--img src="SBdP (11).jpg" alt="Soal" class="responsive" width="600" height="400"-->
+                            <!--img src="SBdP (12).jpg" alt="Soal" class="responsive" width="600" height="400"-->
                         </td>
                     </tr>
                 </table>
@@ -106,7 +106,7 @@
 
                             <p>DATA PESERTA</p>
                             <form name="try-out-online-2021">
-                                  <select class="form-dropdown col-75" id="input_5" name="nama peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_5">
+                                  <select class="form-dropdown col-75" id="input_5" name="nama peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_5" required>
                                     <option value=""> Pilih nama peserta </option>
                                     <option value="AFGANSYAH PUTRA"> AFGANSYAH PUTRA </option>
                                     <option value="AHMAD HAFIZH IHTIMAM"> AHMAD HAFIZH IHTIMAM </option>
@@ -150,7 +150,7 @@
                                   </select>
 
                               
-                                  <select class="form-dropdown col-75" id="input_6" name="nomor peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_6">
+                                  <select class="form-dropdown col-75" id="input_6" name="nomor peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
                                     <option value=""> Pilih nomor peserta </option>
                                     <option value="2121210001"> 2121210001 </option>
                                     <option value="2121210002"> 2121210002 </option>
@@ -193,9 +193,9 @@
                                     <option value="2121210039"> 2121210039 </option>
                                   </select>
 
-                                <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" name="tanggal ujian" style="width:180px" data-component="dropdown" aria-labelledby="label_5">
+                                <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" name="tanggal ujian" style="width:180px" data-component="dropdown" aria-labelledby="label_5" required>
 
-                                <select class="form-dropdown col-75" id="input_6" name="mata uji" style="width:180px" data-component="dropdown" aria-labelledby="label_6">
+                                <select class="form-dropdown col-75" id="input_6" name="mata uji" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
                                     <option value=""> Pilih mata pelajaran </option>
                                     <option value="Bahasa Indonesia"> Bahasa Indonesia </option>
                                     <option value="Bahasa Inggris"> Bahasa Inggris </option>
