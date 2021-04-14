@@ -1,322 +1,303 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Ujian Online SDIT Al Manar</title>
-  <style>
-    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
- 
- body {
-   background: #eee;
-   margin:0;
-   font-family: 'Open Sans', sans-serif;
- }
-  
- hr {
-   border:0;
-   background:#dedede;
-   height:1px;
- }		
-  
- header{
-   text-align: center;
-   color: #232323;
- }
-  
- header .judul{
-   font-size: 24pt;
- }
-  
- header .deskripsi{
-   font-size: 11pt;
- }
-  
- .wrap {
-   width: 950px;
-   margin:25px auto;
- }
-  
- .sidebar {
-   float:right;
-   width:275px;
- }
-  
- .sidebar .widget {
-   padding:25px;
-   margin:0 0 25px;
-   background:#fff;
-   border-bottom: 2px solid #fff;
-   transition: all 0.5s ease;
- }
-  
- .sidebar .widget:hover {
-   border-bottom: 2px solid #3498db;
- }
-  
- .sidebar .widget h2 {
-   padding:0;
-   margin:0 0 15px;
-   color:#3498db;
-   font-size: 18px;
-   font-weight:800;
-   text-transform: uppercase;
-   text-align: center;
- }
-  
- .sidebar .widget p {
-   font-size: 20px;
-   font-family: 'comic sans';
- }
-  
- .sidebar .widget p:last-child {
-   margin:0;
- }
-  
- .blog {
-   float:left;
- }
-  
- .conteudo {
-   width:600px;
-   padding:25px;
-   margin:auto;
-   background: #fff;
-   border:1px solid #dedede;
-   -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-   -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-   box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
- }
-  
- .conteudo h1 {
-   padding:0;
-   margin:0 0 15px;
-   text-transform: uppercase;
-     color:#3498db;
-   font-size: 18px;
-     text-align: center;
- }
- 
- @media screen and (max-width: 960px) {
-  
-   .header {
-     position:inherit;
-   }
-  
-   .wrap {
-     width: 90%;
-     margin:25px auto;
-   }
-   .sidebar {
-     width:100%;
-     margin:25px 0 0;
-     float:right;
-   }
-  
-   .sidebar .widget {
-     padding:5%;
-   }
-  
-   .blog {
-     width:90%;
-   }
-  
-   .conteudo {
-     float:inherit;
-     margin:0 auto 25px;
-     width:101%;
-     border:1px solid #dedede;
-     padding:5%;  
-     background: #fff;
-   }
-  
-  
-   .conteudo .continue-lendo:hover {
-     margin-left:0;
-   }
-  
-  
- }
-  
- @media screen and (max-width: 460px) {
-  
-  
-   .sidebar {
-     display:none
-   }
-  
-   .conteudo {
-     margin:25px auto;
-   }
-     
- }
-  </style>
-</head>
+<html lang="en">
+<title>PAT SDIT Al Manar 2021</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+</style>
 <body>
-	
-	<!-- bagian header template -->
-	<header>
-        <img src="almanar.png" alt="Cinque Terre" width="110" height="110" style="margin-top: 5px;">
-		<h1 class="judul" style="margin: auto;">UJI COBA UJIAN SEKOLAH 2021</h1>
-		<p class="deskripsi">Pelaksanaan dari tanggal 5 April 2021 s/d 9 April 2021</p>
-	</header>
-	<!-- akhir bagian header template -->
-	
-	<div class="wrap">
-		<!-- bagian sidebar website -->
-		<aside class="sidebar">
-			<div class="widget">
-				<h2>Soal Hari Ini</h2>
-                <hr>
-				    <p style="text-align: center;">
-                    <button id="jam1" type="button" class="btn btn-outline-warning btn-lg" style="font-size: 20px;">Soal 1 akan terbuka <br><span id="timer1"></span> lagi</button></p>
-                    <p style="text-align: center;">
-                    <button id="jam2" type="button" class="btn btn-outline-warning btn-lg" style="font-size: 20px;">Soal 2 akan terbuka <br><span id="timer2"></span> lagi</button></p>
-			</div>
-			<div class="widget">
-				<h2>Kata Motivasi</h2>
-                <hr>
-				<p>"Allah tidak berfirman bahwa hidup ini mudah, tapi Allah berfirman bahwa pada setiap kesulitan akan ada kemudahan."</p>
-			</div>
-		</aside>
-		<!-- akhir bagian sidebar website -->
- 
-		<!-- bagian konten Blog -->
-		<div class="blog">
-			<div class="conteudo">
-				<h1 style="font-size: 24px;"> PETUNJUK SINGKAT UJIAN ONLINE </h1>
-				<hr>
-				<ul style="text-align: left; font-size: 24px;">
-                    <li>Berdoa sebelum mengerjakan soal.</li>
-                    <li>Waktu yang disediakan 120 menit.</li>
-                    <li>Teliti dalam mengerjakan soal dan tidak terburu-buru.</li>
-                    <li>Simpan lah pekerjaan kamu dengan cara klik tombol penyimpanan yang telah disediakan.</li>
-                    <li><strong>PERHATIAN!</strong> Tombol simpan akan hilang setelah waktu habis.</li>
-                    <li>Ucapkan Hamdalah setelah selesai mengerjakan soal.</li>
-                  </ul>
-			</div>
-		<!-- akhir bagian konten Blog -->
-	</div>
 
-    <!-- SETTING WAKTU UJIAN KE-1 -->
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:28px 16px">
+  <img src="almanar.png" alt="Cinque Terre" width="110" height="110">
+  <h1 class="w3-margin w3-xxlarge">PENILAIAN AKHIR TAHUN ONLINE 2021</h1>
+</header>
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate1 = new Date("April 9, 2021 07:30:00").getTime(); // SESUAIKAN WAKTU
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 style="font-size: 24px;"> PETUNJUK SINGKAT UJIAN ONLINE </h1>
+      <hr>
+      <ul style="text-align: left; font-size: 24px;">
+                  <li>Berdoa sebelum mengerjakan soal.</li>
+                  <li>Waktu yang disediakan 90 menit.</li>
+                  <li>Teliti dalam mengerjakan soal dan tidak terburu-buru.</li>
+                  <li>Simpan lah pekerjaan kamu dengan cara klik tombol penyimpanan yang telah disediakan.</li>
+                  <li><strong style="color: red;">PERHATIAN!</strong> Tombol simpan akan hilang setelah waktu habis.</li>
+                  <li>Ucapkan Hamdalah setelah selesai mengerjakan soal.</li>
+                </ul>
+    </div>
 
-        // Update the count down every 1 second
-        var x1 = setInterval(function() {
+    <div class="w3-third w3-center">
+      <img src="Gambar.jpg" alt="Cinque Terre" width="400" height="300" style="margin-top: 65px;">
+    </div>
+  </div>
+</div>
 
-        // Get today's date and time
-        var now1 = new Date().getTime();
-            
-        // Find the distance between now and the count down date
-        var distance1 = countDownDate1 - now1;
+<!-- Second Grid -->
+<div id="selesai" class="w3-row-padding w3-padding-48 w3-container w3-light-gray">
+  <div class="w3-content">
+    <div class="">
+      <center style="font-size: 30px;">JADWAL HARI INI</center>
 
-         // Time calculations for days, hours, minutes and seconds
-         var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
-        var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
-            
-        // Output the result in an element with id="demo"
-        document.getElementById("timer1").innerHTML = hours1 + "j " + minutes1 + "m " + seconds1 + "d ";
-            
-        // If the count down is over, write some text 
-        var str1 = "Soal Jam 1";
-        var link1 = str1.link("https://sditalmanar.github.io/Soal1.html");
-        if (distance1 < 0) {
-            clearInterval(x1);
-            document.getElementById("jam1").innerHTML = link1;
-        }
+      <center><button id="warning" class="btn btn-danger">Soal 1 akan terbuka <span id="timer"></span> lagi</center>
 
-        }, 1000);
-    </script>
+      <br>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>Kelas 1</h3>
+            <button id="btn1kelas1" type="button" class="btn btn-light">Mapel 1</button>
+            <button id="btn2kelas1" type="button" class="btn btn-light">Mapel 2</button>
+          </div>
+        </div>
 
-    <!-- SETTING WAKTU UJIAN KE-2 -->
+        <div class="column">
+          <div class="card">
+            <h3>Kelas 2</h3>
+            <button id="btn1kelas2" type="button" class="btn btn-light">Mapel 1</button>
+            <button id="btn2kelas2" type="button" class="btn btn-light">Mapel 2</button>
+          </div>
+        </div>
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate2 = new Date("April 8, 2021 10:00:00").getTime(); // SESUAIKAN WAKTU
+        <div class="column">
+          <div class="card">
+            <h3>Kelas 3</h3>
+            <button id="btn1kelas3" type="button" class="btn btn-light">Mapel 1</button>
+            <button id="btn2kelas3" type="button" class="btn btn-light">Mapel 2</button>
+          </div>
+        </div>
 
-      // Update the count down every 1 second
-      var x2 = setInterval(function() {
+        <div class="column">
+          <div class="card">
+            <h3>Kelas 4</h3>
+            <button id="btn1kelas4" type="button" class="btn btn-light">Mapel 1</button>
+            <button id="btn2kelas4" type="button" class="btn btn-light">Mapel 2</button>
+          </div>
+        </div>
 
-      // Get today's date and time
-      var now2 = new Date().getTime();
-          
-      // Find the distance between now and the count down date
-      var distance2 = countDownDate2 - now2;
+        <div class="column">
+          <div class="card">
+            <h3>Kelas 5</h3>
+            <button id="btn1kelas5" type="button" class="btn btn-light">Mapel 1</button>
+            <button id="btn2kelas5" type="button" class="btn btn-light">Mapel 2</button>
+          </div>
+        </div>
 
-      // Time calculations for days, hours, minutes and seconds
-      var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
-      var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
-          
-      // Output the result in an element with id="demo"
-      document.getElementById("timer2").innerHTML = hours2 + "j " + minutes2 + "m " + seconds2 + "d ";
-          
-      // If the count down is over, write some text 
-      var str2 = "Soal Jam 2";
-      var link2 = str2.link("https://sditalmanar.github.io/Soal2.html");
-      if (distance2 < 0) {
-          clearInterval(x2);
-          document.getElementById("jam2").innerHTML = link2;
-      }
+      </div>
+    </div>
+  </div>
+</div>
 
-      }, 1000);
-    </script>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/yayasan.almanar"></a>
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/yayasanalmanar/"></a>
+    <a class="fa fa-youtube w3-hover-opacity" href="https://www.youtube.com/channel/UCMAa7y78KH973HezFYmiTdg"></a>
+    <i></i>
+ </div>
+ <p>SDIT Al Manar @2021 Copyright Reserved</p>
+</footer>
 
-    <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-1 -->
+<!-- JAVASCRIPT-->
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate3 = new Date("April 9, 2021 09:30:00").getTime(); // SESUAIKAN WAKTU
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
 
-      // Update the count down every 1 second
-      var x3 = setInterval(function() {
+                                                                      //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM PERTAMA
 
-      // Get today's date and time
-      var now3 = new Date().getTime();
-          
-      // Find the distance between now and the count down date
-      var distance3 = countDownDate3 - now3;
-          
-      // If the count down is over, write some text 
-      if (distance3 < 0) {
-            clearInterval(x3);
-            var elem3 = document.getElementById('jam1');
-            elem3.parentNode.removeChild(elem3);
-            return false;
-      }
+    // Set the date we're counting down to
+    var countDownDateOn1 = new Date("April 11, 2021 06:55:00").getTime(); // SESUAIKAN WAKTU
 
-      }, 1000);
-    </script>
+    // Update the count down every 1 second
+    var xOn1 = setInterval(function() {
 
-    <!-- SETTING WAKTU MEMATIKAN TOMBOL UJIAN KE-2 -->
+    // Get today's date and time
+    var nowOn1 = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distanceOn1 = countDownDateOn1 - nowOn1;
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate4 = new Date("April 8, 2021 12:00:00").getTime(); // SESUAIKAN WAKTU
+    // Time calculations for days, hours, minutes and seconds
+    var daysOn1 = Math.floor(distanceOn1 / (1000 * 60 * 60 * 24));
+    var hoursOn1 = Math.floor((distanceOn1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutesOn1 = Math.floor((distanceOn1 % (1000 * 60 * 60)) / (1000 * 60));
+    var secondsOn1 = Math.floor((distanceOn1 % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("timer").innerHTML = hoursOn1 + "j " + minutesOn1 + "m " + secondsOn1 + "d ";
+        
+    // If the count down is over, write some text 
+    var jadwal1Kelas1 = "Mapel 1";
+    var jadwal1Kelas2 = "Mapel 1";
+    var jadwal1Kelas3 = "Mapel 1";
+    var jadwal1Kelas4 = "Mapel 1";
+    var jadwal1Kelas5 = "Mapel 1";
+    var soal1Kelas1 = jadwal1Kelas1.link("https://sditalmanar.github.io/Soal1kelas1.html");
+    var soal1Kelas2 = jadwal1Kelas2.link("https://sditalmanar.github.io/Soal1kelas2.html");
+    var soal1Kelas3 = jadwal1Kelas3.link("https://sditalmanar.github.io/Soal1kelas3.html");
+    var soal1Kelas4 = jadwal1Kelas4.link("https://sditalmanar.github.io/Soal1kelas4.html");
+    var soal1Kelas5 = jadwal1Kelas5.link("https://sditalmanar.github.io/Soal1kelas5.html");
+    if (distanceOn1 < 0) {
+        clearInterval(xOn1);
+        document.getElementById("warning").innerHTML = "Soal jam pertama telah dibuka, silahkan klik sesuai jadwal setiap kelas.";
+        document.getElementById("btn1kelas1").innerHTML = soal1Kelas1;
+        document.getElementById("btn1kelas2").innerHTML = soal1Kelas2;
+        document.getElementById("btn1kelas3").innerHTML = soal1Kelas3;
+        document.getElementById("btn1kelas4").innerHTML = soal1Kelas4;
+        document.getElementById("btn1kelas5").innerHTML = soal1Kelas5;
+    }
 
-      // Update the count down every 1 second
-      var x4 = setInterval(function() {
+    }, 1000);
 
-      // Get today's date and time
-      var now4 = new Date().getTime();
-          
-      // Find the distance between now and the count down date
-      var distance4 = countDownDate4 - now4;
-          
-      // If the count down is over, write some text 
-      if (distance4 < 0) {
-            clearInterval(x3);
-            var elem4 = document.getElementById('jam2');
-            elem4.parentNode.removeChild(elem4);
-            return false;
-      }
+                                                                                  //SETTING WAKTU PERINGATAN ISTIRAHAT
 
-      }, 1000);
-    </script>
- 
+    // Set the date we're counting down to
+    var countDownDateBreak = new Date("April 11, 2021 06:56:00").getTime(); // SESUAIKAN WAKTU
+
+    // Update the count down every 1 second
+    var xBreak = setInterval(function() {
+
+    // Get today's date and time
+    var nowBreak = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distanceBreak = countDownDateBreak - nowBreak;
+        
+    // If the count down is over, write some text 
+    if (distanceBreak < 0) {
+          clearInterval(xBreak);
+          document.getElementById("warning").innerHTML = "Waktu istirahat hingga pukul 09.30, gunakan waktu istirahat kamu untuk sholat dhuha dan makan snack";
+    }
+
+    }, 1000);
+
+                                                                        //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM KEDUA
+
+  // Set the date we're counting down to
+  var countDownDateOn2 = new Date("April 11, 2021 06:57:00").getTime(); // SESUAIKAN WAKTU
+
+  // Update the count down every 1 second
+  var xOn2 = setInterval(function() {
+
+  // Get today's date and time
+  var nowOn2 = new Date().getTime();
+      
+  // Find the distance between now and the count down date
+  var distanceOn2 = countDownDateOn2 - nowOn2;
+      
+  // If the count down is over, write some text 
+    var jadwal2Kelas1 = "Mapel 2";
+    var jadwal2Kelas2 = "Mapel 2";
+    var jadwal2Kelas3 = "Mapel 2";
+    var jadwal2Kelas4 = "Mapel 2";
+    var jadwal2Kelas5 = "Mapel 2";
+    var soal2Kelas1 = jadwal2Kelas1.link("https://sditalmanar.github.io/Soal2kelas1.html");
+    var soal2Kelas2 = jadwal2Kelas2.link("https://sditalmanar.github.io/Soal2kelas2.html");
+    var soal2Kelas3 = jadwal2Kelas3.link("https://sditalmanar.github.io/Soal2kelas3.html");
+    var soal2Kelas4 = jadwal2Kelas4.link("https://sditalmanar.github.io/Soal2kelas4.html");
+    var soal2Kelas5 = jadwal2Kelas5.link("https://sditalmanar.github.io/Soal2kelas5.html");
+    if (distanceOn2 < 0) {
+      clearInterval(xOn2);
+      document.getElementById("warning").innerHTML = "Soal jam kedua telah dibuka, silahkan klik sesuai jadwal setiap kelas.";
+      document.getElementById("btn2kelas1").innerHTML = soal2Kelas1;
+      document.getElementById("btn2kelas2").innerHTML = soal2Kelas2;
+      document.getElementById("btn2kelas3").innerHTML = soal2Kelas3;
+      document.getElementById("btn2kelas4").innerHTML = soal2Kelas4;
+      document.getElementById("btn2kelas5").innerHTML = soal2Kelas5;
+  }
+
+  }, 1000);
+
+
+                                                                    //SETTING WAKTU MENGHILANGKAN LAMAN LINK SOAL
+
+
+    // Set the date we're counting down to
+    var countDownDate4 = new Date("April 15, 2021 07:24:00").getTime(); // SESUAIKAN WAKTU
+
+    // Update the count down every 1 second
+    var x4 = setInterval(function() {
+
+    // Get today's date and time
+    var now4 = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance4 = countDownDate4 - now4;
+        
+    // If the count down is over, write some text 
+    if (distance4 < 0) {
+          clearInterval(x4);
+          var elem4 = document.getElementById('selesai');
+          elem4.parentNode.removeChild(elem4);
+          return false;
+          }
+
+    }, 1000)
+</script>
+
 </body>
 </html>
