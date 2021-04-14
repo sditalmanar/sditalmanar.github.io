@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   height: 100vh;
@@ -12,15 +13,19 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
 }
+
 .split {
   width:100%;
   height:100%;
   padding: 30px;
   border: 1px solid;
 }
+
 .a {
   background: white;
   background-attachment: fixed;
@@ -33,17 +38,8 @@ body {
 
 .gutter {
   cursor: e-resize;
-  height: 100%;
+  height: 649px;
   background: grey;
-}
-
-.text-center {
-    border: 1px solid black;
-    background-color: lightblue;
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
 }
 
 select {
@@ -59,12 +55,20 @@ select {
 
 .yellowText{ background-color:yellow; }
 
-.scrolling-box {
+.scrolling-box-a{
   background-color: #2e9b40;
   display: block;
   width: 100%;
-  height: 550px;
-  padding: 1vw;
+  height: 615px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.scrolling-box-b{
+  background-color: #2e9b40;
+  display: block;
+  width: 100%;
+  height: 647px;
   overflow-y: scroll;
   text-align: center;
 }
@@ -156,7 +160,6 @@ select {
   
   /* Clear floats after the columns */
   .row:after {
-    content: "";
     display: table;
     clear: both;
   }
