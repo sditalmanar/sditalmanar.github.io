@@ -14,17 +14,19 @@
     </head>
 
     <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="waktu"> SISA WAKTU = <span id="timer"></span></a>
+            <a href="#" id="download" >SCREENSHOOT JAWABAN</button></a>
+        </div>
 
         <div class="content">
 
             <!-- TAMPILAN KIRI -->
 
             <div class="cell a">
-                <div class="demo" id="habis">SISA WAKTU = <span id="timer"></span></div>
-                <table border="1" padding="30px" width="100%" align="center" class="tableUserInfo">
-                    <td>
-                        <div class="scrolling-box-a" align="center">
-
+                <table border="1" width="100%" align="center" class="tableUserInfo">
+                    <td class="scrolling-box-a" align="center">
+                        
                              <!-- SETTING IMAGE SOAL -->
 
                             <img src="Bing (1).jpg" alt="Soal" class="responsive" width="1000" height="400">
@@ -40,9 +42,8 @@
                             <!--img src="Bing (11).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
                             <!--img src="Bing (12).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
 
-                            <!-- AKHIR SETTING IMAGE SOAL -->
-
-                        </div>
+                            <!-- AKHIR SETTING IMAGE -->
+                            
                     </td>
                 </table>
             </div>
@@ -113,14 +114,6 @@
                                     <option value=""> Kelas </option>
                                     <option value="1A"> 1A </option>
                                     <option value="1B"> 1B </option>
-                                    <option value="2A"> 2A </option>
-                                    <option value="2B"> 2B </option>
-                                    <option value="3A"> 3A </option>
-                                    <option value="3B"> 3B </option>
-                                    <option value="4A"> 4A </option>
-                                    <option value="4B"> 4B </option>
-                                    <option value="5A"> 5A </option>
-                                    <option value="5B"> 5B </option>
                                 </select>
 
                                 <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" name="tanggal ujian" style="width:180px;" data-component="dropdown" aria-labelledby="label_5" required>
@@ -521,12 +514,10 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn success" id="submit">SIMPAN JAWABAN</button>
+                                <button type="submit" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN</button>
                     </form>
 
                     <!-- AKHIR FORM LEMBAR JAWABAN -->
-
-                    <button id="download" class="btn success">SCREENSHOOT JAWABAN</button>
 
                     </td>
                 </table>
@@ -540,7 +531,7 @@
 
         // SETTING WAKTU MENGERJAKAN SOAL
 
-            var sec         = 5400,
+            var sec         = 60,
                 countDiv    = document.getElementById("timer"), secpass,
                 countDown   = setInterval(function () {'use strict';
                 secpass();
@@ -552,10 +543,9 @@
             countDiv.innerHTML = min + "m : " + remSec + "s";
     
             if (sec > 0) {sec = sec - 1;} else {clearInterval(countDown);
-        
-                document.getElementById("habis").innerHTML = "Waktu kamu habis, jawaban kamu tidak dapat disimpan.";
                 var elem = document.getElementById('submit');
                 elem.parentNode.removeChild(elem);
+                alert ("Waktu kamu habis. Jawaban terakhir kamu tidak dapat disimpan. Silahkan klik tombol Screenshot!");
                 }}
 
         // ALERT REFRESH
@@ -564,23 +554,32 @@
             return "Do you want to exit this page?";
         });
 
+        // ALERT NYONTEK
+
+        function handleVisibilityChange() {
+        if(document.hidden) {
+            alert ("Allah Maha Melihat! Prestasi penting, Jujur yang utama!");
+        }}
+
+        document.addEventListener("visibilitychange", handleVisibilityChange, false);
+                    
         // SPLIT LAYAR
         
         Split(['.a', '.b'], {
             gutterSize: 5,
             sizes: [50,50],
-            minSize: [100,200]
+            minSize: [390,250]
         });
 
         // SCREENSHOOT
 
         document.getElementById("download").addEventListener("click", function() {
-                
+        var r = confirm ("Jika kamu menggunakan laptop klik 'OKE'. Jika menggunakan HP klik 'CANCEL', posisikan HP berdiri (Portrait) kemudian klik tombol screenshot kembali.");
+        if (r == true) {
             html2canvas(document.querySelector('#boundary')).then(function(canvas) {
-
             saveAs(canvas.toDataURL(), 'Ubah nama.jpg');
             });
-            });
+        }});
 
         function saveAs(uri, filename) {
 
@@ -595,10 +594,11 @@
                 document.body.appendChild(link);
 
                 //simulate click
-                    link.click();
+                link.click();
 
                 //remove the link when done
                 document.body.removeChild(link);
+                confirm ("Silahkan periksa hasil download screenshot di ruang penyimpanan perangkat ini kemudian kirim ke wali kelasmu!");
 
                 } else {
 
@@ -620,9 +620,9 @@
 
                 console.log('Success!', response)
 
-                if (confirm("Jawaban kamu telah tersimpan. Apakah kamu ingin keluar?")); {
+                alert ("Jawaban kamu telah tersimpan. Apakah kamu ingin keluar?");
                 window.location.href = "https://sditalmanar.github.io/";
-                }})
+                })
 
                 .catch(error => {
                 
