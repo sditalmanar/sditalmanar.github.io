@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>PAT SDIT Al Manar 2021</title>
+<title>UJIAN SEKOLAH UTAMA SDIT Al Manar 2021</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -54,6 +54,7 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
+    width: 50vh;
     text-align: center;
     background-color: #f1f1f1;
   }
@@ -63,7 +64,7 @@
 <!-- Header -->
 <header class="w3-container w3-green w3-center" style="padding:28px 16px">
   <img src="almanar.png" alt="Cinque Terre" width="110" height="110">
-  <h1 class="w3-margin w3-xxlarge">PENILAIAN AKHIR TAHUN ONLINE 2021</h1>
+  <h1 class="w3-margin w3-xxlarge">UJIAN SEKOLAH UTAMA ONLINE 2021</h1>
 </header>
 
 <!-- First Grid -->
@@ -74,7 +75,7 @@
       <hr>
       <ul style="text-align: left; font-size: 24px;">
         <li>Berdoa sebelum mengerjakan soal.</li>
-        <li>Waktu yang disediakan 90 menit.</li>
+        <li>Waktu yang disediakan 120 menit.</li>
         <li>Teliti dalam mengerjakan soal dan tidak terburu-buru.</li>
         <li>Simpan lah pekerjaan kamu dengan cara klik tombol penyimpanan yang telah disediakan.</li>
         <li><strong style="color: red;">PERHATIAN!</strong> Tombol simpan akan hilang setelah waktu habis.</li>
@@ -91,56 +92,25 @@
 <!-- Second Grid -->
 <div id="selesai" class="w3-row-padding w3-padding-48 w3-container w3-light-gray">
   <div class="w3-content">
-    <div class="">
+    <div>
       <center style="font-size: 30px;">JADWAL HARI INI</center>
 
       <center><button id="warning" class="btn btn-danger">Soal 1 akan terbuka <span id="timer"></span> lagi</center>
 
       <br>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Kelas 1</h3>
-            <button id="btn1kelas1" type="button" class="btn btn-light">Mapel 1</button>
-            <button id="btn2kelas1" type="button" class="btn btn-light">Mapel 2</button>
-          </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div  class="text-center">
+                  <button id="btnjam1" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">Soal 1</button>
+                  <button id="btnjam2" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">Soal 2</button>
+                </div>
+            </div>
         </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Kelas 2</h3>
-            <button id="btn1kelas2" type="button" class="btn btn-light">Mapel 1</button>
-            <button id="btn2kelas2" type="button" class="btn btn-light">Mapel 2</button>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Kelas 3</h3>
-            <button id="btn1kelas3" type="button" class="btn btn-light">Mapel 1</button>
-            <button id="btn2kelas3" type="button" class="btn btn-light">Mapel 2</button>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Kelas 4</h3>
-            <button id="btn1kelas4" type="button" class="btn btn-light">Mapel 1</button>
-            <button id="btn2kelas4" type="button" class="btn btn-light">Mapel 2</button>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Kelas 5</h3>
-            <button id="btn1kelas5" type="button" class="btn btn-light">Mapel 1</button>
-            <button id="btn2kelas5" type="button" class="btn btn-light">Mapel 2</button>
-          </div>
-        </div>
-
       </div>
+
     </div>
-  </div>
+</div>
 </div>
 
 <!-- Footer -->
@@ -149,7 +119,6 @@
     <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/yayasan.almanar"></a>
     <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/yayasanalmanar/"></a>
     <a class="fa fa-youtube w3-hover-opacity" href="https://www.youtube.com/channel/UCMAa7y78KH973HezFYmiTdg"></a>
-    <i></i>
  </div>
  <p>SDIT Al Manar @2021 Copyright Reserved</p>
 </footer>
@@ -157,6 +126,7 @@
 <!-- JAVASCRIPT-->
 
 <script>
+
   // Used to toggle the menu on small screens when clicking on the menu button
   function myFunction() {
     var x = document.getElementById("navDemo");
@@ -170,7 +140,7 @@
                                                                       //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM PERTAMA
 
     // Set the date we're counting down to
-    var countDownDateOn1 = new Date("April 11, 2021 06:55:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDateOn1 = new Date("April 17, 2021 19:43:00").getTime(); // SESUAIKAN WAKTU
 
     // Update the count down every 1 second
     var xOn1 = setInterval(function() {
@@ -191,32 +161,18 @@
     document.getElementById("timer").innerHTML = hoursOn1 + "j " + minutesOn1 + "m " + secondsOn1 + "d ";
         
     // If the count down is over, write some text 
-    var jadwal1Kelas1 = "Mapel 1";
-    var jadwal1Kelas2 = "Mapel 1";
-    var jadwal1Kelas3 = "Mapel 1";
-    var jadwal1Kelas4 = "Mapel 1";
-    var jadwal1Kelas5 = "Mapel 1";
-    var soal1Kelas1 = jadwal1Kelas1.link("https://sditalmanar.github.io/soal1kelas1.html");
-    var soal1Kelas2 = jadwal1Kelas2.link("https://sditalmanar.github.io/soal1kelas2.html");
-    var soal1Kelas3 = jadwal1Kelas3.link("https://sditalmanar.github.io/soal1kelas3.html");
-    var soal1Kelas4 = jadwal1Kelas4.link("https://sditalmanar.github.io/soal1kelas4.html");
-    var soal1Kelas5 = jadwal1Kelas5.link("https://sditalmanar.github.io/soal1kelas5.html");
+    var jadwal1 = "SOAL 1";
+    var soal1 = jadwal1.link("https://sditalmanar.github.io/soal1.html");
     if (distanceOn1 < 0) {
         clearInterval(xOn1);
-        document.getElementById("warning").innerHTML = "Soal jam pertama telah dibuka, silahkan klik sesuai jadwal setiap kelas.";
-        document.getElementById("btn1kelas1").innerHTML = soal1Kelas1;
-        document.getElementById("btn1kelas2").innerHTML = soal1Kelas2;
-        document.getElementById("btn1kelas3").innerHTML = soal1Kelas3;
-        document.getElementById("btn1kelas4").innerHTML = soal1Kelas4;
-        document.getElementById("btn1kelas5").innerHTML = soal1Kelas5;
-    }
-
-    }, 1000);
+        document.getElementById("warning").innerHTML = "Soal jam pertama telah dibuka, silahkan klik SOAL 1.";
+        document.getElementById("btnjam1").innerHTML = soal1;
+    }}, 1000);
 
                                                                                   //SETTING WAKTU PERINGATAN ISTIRAHAT
 
     // Set the date we're counting down to
-    var countDownDateBreak = new Date("April 11, 2021 06:56:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDateBreak = new Date("April 17, 2021 19:44:00").getTime(); // SESUAIKAN WAKTU
 
     // Update the count down every 1 second
     var xBreak = setInterval(function() {
@@ -231,14 +187,15 @@
     if (distanceBreak < 0) {
           clearInterval(xBreak);
           document.getElementById("warning").innerHTML = "Waktu istirahat hingga pukul 09.30, gunakan waktu istirahat kamu untuk sholat dhuha dan makan snack";
-    }
-
-    }, 1000);
+          var elemBreak = document.getElementById('btnjam1');
+          elemBreak.parentNode.removeChild(elemBreak);
+          return false;
+    }}, 1000);
 
                                                                         //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM KEDUA
 
   // Set the date we're counting down to
-  var countDownDateOn2 = new Date("April 11, 2021 06:57:00").getTime(); // SESUAIKAN WAKTU
+  var countDownDateOn2 = new Date("April 17, 2021 19:45:00").getTime(); // SESUAIKAN WAKTU
 
   // Update the count down every 1 second
   var xOn2 = setInterval(function() {
@@ -250,34 +207,18 @@
   var distanceOn2 = countDownDateOn2 - nowOn2;
       
   // If the count down is over, write some text 
-    var jadwal2Kelas1 = "Mapel 2";
-    var jadwal2Kelas2 = "Mapel 2";
-    var jadwal2Kelas3 = "Mapel 2";
-    var jadwal2Kelas4 = "Mapel 2";
-    var jadwal2Kelas5 = "Mapel 2";
-    var soal2Kelas1 = jadwal2Kelas1.link("https://sditalmanar.github.io/soal2kelas1.html");
-    var soal2Kelas2 = jadwal2Kelas2.link("https://sditalmanar.github.io/soal2kelas2.html");
-    var soal2Kelas3 = jadwal2Kelas3.link("https://sditalmanar.github.io/soal2kelas3.html");
-    var soal2Kelas4 = jadwal2Kelas4.link("https://sditalmanar.github.io/soal2kelas4.html");
-    var soal2Kelas5 = jadwal2Kelas5.link("https://sditalmanar.github.io/soal2kelas5.html");
+    var jadwal2 = "SOAL 2";
+    var soal2 = jadwal2.link("https://sditalmanar.github.io/soal2.html");
     if (distanceOn2 < 0) {
       clearInterval(xOn2);
-      document.getElementById("warning").innerHTML = "Soal jam kedua telah dibuka, silahkan klik sesuai jadwal setiap kelas.";
-      document.getElementById("btn2kelas1").innerHTML = soal2Kelas1;
-      document.getElementById("btn2kelas2").innerHTML = soal2Kelas2;
-      document.getElementById("btn2kelas3").innerHTML = soal2Kelas3;
-      document.getElementById("btn2kelas4").innerHTML = soal2Kelas4;
-      document.getElementById("btn2kelas5").innerHTML = soal2Kelas5;
-  }
-
-  }, 1000);
-
+      document.getElementById("warning").innerHTML = "Soal jam kedua telah dibuka, silahkan klik SOAL 2.";
+      document.getElementById("btnjam2").innerHTML = soal2;
+  }}, 1000);
 
                                                                     //SETTING WAKTU MENGHILANGKAN LAMAN LINK SOAL
 
-
     // Set the date we're counting down to
-    var countDownDate4 = new Date("April 20, 2021 07:24:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDate4 = new Date("April 17, 2021 19:46:00").getTime(); // SESUAIKAN WAKTU
 
     // Update the count down every 1 second
     var x4 = setInterval(function() {
@@ -294,9 +235,8 @@
           var elem4 = document.getElementById('selesai');
           elem4.parentNode.removeChild(elem4);
           return false;
-          }
+          }}, 1000)
 
-    }, 1000)
 </script>
 
 </body>
