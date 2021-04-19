@@ -61,7 +61,7 @@
 
                         <p>DATA UJIAN</p>
                             <form id="boundary" name="ujian-online">
-                                <select class="form-dropdown col-75" name="nama siswa" style="width:180px" data-component="dropdown" aria-labelledby="label_5" required>
+                                <select class="form-dropdown col-75" name="nama peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_5" required>
                                     <option value=""> Pilih nama peserta </option>
                                     <option value="AFGANSYAH PUTRA"> AFGANSYAH PUTRA </option>
                                     <option value="AHMAD HAFIZH IHTIMAM"> AHMAD HAFIZH IHTIMAM </option>
@@ -70,7 +70,7 @@
                                     <option value="ANGGER PRAMUDITA KENZIE"> ANGGER PRAMUDITA KENZIE </option>
                                     <option value="ANINDITYA PUTRI SUSANTO"> ANINDITYA PUTRI SUSANTO </option>
                                     <option value="ATHAYA RIFQIZA SETIAWAN"> ATHAYA RIFQIZA SETIAWAN </option>
-                                    <option value="AYUNDA KHANSA; ZAHIRA"> AYUNDA KHANSA ZAHIRA </option>
+                                    <option value="AYUNDA KHANSA ZAHIRA"> AYUNDA KHANSA ZAHIRA </option>
                                     <option value="CHOIRUNNISA FITRIANI"> CHOIRUNNISA FITRIANI </option>
                                     <option value="DANISH AHMAD GAZARI"> DANISH AHMAD GAZARI </option>
                                     <option value="DYANDRA LAILANDARU LESMANA"> DYANDRA LAILANDARU LESMANA </option>
@@ -150,20 +150,17 @@
 
                                 <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" name="tanggal ujian" style="width:180px;" data-component="dropdown" aria-labelledby="label_5" required>
 
-                                <select class="form-dropdown col-75" name="mata pelajaran" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
+                                <select class="form-dropdown col-75" name="mata uji" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
                                     <option value=""> Pilih mata pelajaran </option>
-                                    <option value="Tema 5"> Tema 5 </option>
-                                    <option value="Tema 6"> Tema 6 </option>
-                                    <option value="Tema 7"> Tema 7 </option>
-                                    <option value="Tema 8"> Tema 8 </option>
-                                    <option value="Tema 9"> Tema 9 </option>
-                                    <option value="Bahasa Arab"> Bahasa Arab </option>
+                                    <option value="Bahasa Indonesia"> Bahasa Indonesia </option>
                                     <option value="Bahasa Inggris"> Bahasa Inggris </option>
+                                    <option value="PAI"> PAI </option>
+                                    <option value="IPS"> IPS </option>
                                     <option value="Matematika"> Matematika </option>
                                     <option value="PAI"> PAI </option>
                                     <option value="PJOK"> PJOK </option>
-                                    <option value="SKI"> SKI </option>
-                                    <option value="TIK"> TIK </option>
+                                    <option value="PKN"> PKN </option>
+                                    <option value="SBdP"> SBdP </option>
                                 </select>
                                 <hr style="height: 5px; color: black;">
 
@@ -659,7 +656,7 @@
             
         // SEND TO GOOGLE SHEET
 
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbx3I_uUaiGkVggCn9hTnx60jJwJFKwgbybseFD-X9o5AglLUXAfc_Rfz1ubs_vXjbToeg/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyxkpYeSI-dlanYAzTzhNVQtsOsxxNkWsJG6Z3fOPXcai6TkPuJg7GDFPtiI_SAQffp4Q/exec'
             const form = document.forms['ujian-online'];
         
             form.addEventListener('submit', e => {
