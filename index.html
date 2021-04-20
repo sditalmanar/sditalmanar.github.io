@@ -95,15 +95,14 @@
     <div>
       <center style="font-size: 30px;">JADWAL HARI INI</center>
 
-      <center><button id="warning" class="btn btn-danger">Soal 1 akan terbuka <span id="timer"></span> lagi</center>
+      <center><button id="warning" class="btn btn-danger">Soal akan terbuka <span id="timer"></span> lagi</center>
 
       <br>
       <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div  class="text-center">
-                  <button id="btnjam1" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">Soal 1</button>
-                  <button id="btnjam2" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">Soal 2</button>
+                  <button id="btnjam1" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">IPA</button>
                 </div>
             </div>
         </div>
@@ -140,7 +139,7 @@
                                                                       //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM PERTAMA
 
     // Set the date we're counting down to
-    var countDownDateOn1 = new Date("April 20, 2021 07:58:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDateOn1 = new Date("April 26, 2021 07:58:00").getTime(); // SESUAIKAN WAKTU
 
     // Update the count down every 1 second
     var xOn1 = setInterval(function() {
@@ -161,79 +160,33 @@
     document.getElementById("timer").innerHTML = hoursOn1 + "j " + minutesOn1 + "m " + secondsOn1 + "d ";
         
     // If the count down is over, write some text 
-    var jadwal1 = "SOAL 1";
-    var soal1 = jadwal1.link("https://sditalmanar.github.io/soal1-1hcI1lLYx.html");
+    var jadwal1 = "IPA";
+    var soal1 = jadwal1.link("https://sditalmanar.github.io/soal1hcI1lLYx.html");
     if (distanceOn1 < 0) {
         clearInterval(xOn1);
-        document.getElementById("warning").innerHTML = "Soal jam pertama telah dibuka, silahkan klik SOAL 1.";
+        document.getElementById("warning").innerHTML = "Link soal telah dibuka, silahkan klik tombol di bawah ini!";
         document.getElementById("btnjam1").innerHTML = soal1;
     }}, 1000);
-
-                                                                                  //SETTING WAKTU PERINGATAN ISTIRAHAT
-
-    // Set the date we're counting down to
-    var countDownDateBreak = new Date("April 20, 2021 07:59:00").getTime(); // SESUAIKAN WAKTU
-
-    // Update the count down every 1 second
-    var xBreak = setInterval(function() {
-
-    // Get today's date and time
-    var nowBreak = new Date().getTime();
-        
-    // Find the distance between now and the count down date
-    var distanceBreak = countDownDateBreak - nowBreak;
-        
-    // If the count down is over, write some text 
-    if (distanceBreak < 0) {
-          clearInterval(xBreak);
-          document.getElementById("warning").innerHTML = "Waktu istirahat hingga pukul 09.30, gunakan waktu istirahat kamu untuk sholat dhuha dan belajar persiapan soal berikutnya.";
-          var elemBreak = document.getElementById('btnjam1');
-          elemBreak.parentNode.removeChild(elemBreak);
-          return false;
-    }}, 1000);
-
-                                                                        //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM KEDUA
-
-  // Set the date we're counting down to
-  var countDownDateOn2 = new Date("April 20, 2021 08:00:00").getTime(); // SESUAIKAN WAKTU
-
-  // Update the count down every 1 second
-  var xOn2 = setInterval(function() {
-
-  // Get today's date and time
-  var nowOn2 = new Date().getTime();
-      
-  // Find the distance between now and the count down date
-  var distanceOn2 = countDownDateOn2 - nowOn2;
-      
-  // If the count down is over, write some text 
-    var jadwal2 = "SOAL 2";
-    var soal2 = jadwal2.link("https://sditalmanar.github.io/soal2-1LuR2D.html");
-    if (distanceOn2 < 0) {
-      clearInterval(xOn2);
-      document.getElementById("warning").innerHTML = "Soal jam kedua telah dibuka, silahkan klik SOAL 2.";
-      document.getElementById("btnjam2").innerHTML = soal2;
-  }}, 1000);
 
                                                                     //SETTING WAKTU MENGHILANGKAN LAMAN LINK SOAL
 
     // Set the date we're counting down to
-    var countDownDate4 = new Date("April 26, 2021 08:01:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDate2 = new Date("April 26, 2021 08:01:00").getTime(); // SESUAIKAN WAKTU
 
     // Update the count down every 1 second
-    var x4 = setInterval(function() {
+    var x2 = setInterval(function() {
 
     // Get today's date and time
-    var now4 = new Date().getTime();
+    var now2 = new Date().getTime();
         
     // Find the distance between now and the count down date
-    var distance4 = countDownDate4 - now4;
+    var distance2 = countDownDate2 - now2;
         
     // If the count down is over, write some text 
-    if (distance4 < 0) {
-          clearInterval(x4);
-          var elem4 = document.getElementById('selesai');
-          elem4.parentNode.removeChild(elem4);
+    if (distance2 < 0) {
+          clearInterval(x2);
+          var elem2 = document.getElementById('selesai');
+          elem2.parentNode.removeChild(elem2);
           return false;
           }}, 1000)
 
