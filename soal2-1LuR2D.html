@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <Title>Soal 2 - US Utama Online SDIT Al Manar</Title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+        <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <Link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="habisTimer"> SISA WAKTU = <span id="timer"></span></a>
+            <a href="#" id="download" >DOWNLOAD LJ</a>
+        </div>
+
+        <div class="content">
+
+            <!-- TAMPILAN KIRI -->
+
+            <div class="cell a">
+                <table border="1" width="100%" align="center" class="tableUserInfo">
+                    <td class="scrolling-box-a" align="center">
+                        
+                             <!-- SETTING IMAGE SOAL -->
+
+                            <img src="PJOK (1).jpg" alt="Soal" class="responsive" width="1000" height="400">
+                            <img src="PJOK (2).jpg" alt="Soal" class="responsive" width="1000" height="400">
+                            <img src="PJOK (3).jpg" alt="Soal" class="responsive" width="1000" height="400">
+                            <img src="PJOK (4).jpg" alt="Soal" class="responsive" width="1000" height="400">
+                            <img src="PJOK (5).jpg" alt="Soal" class="responsive" width="1000" height="400">
+                            <!--img src="PJOK (6).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (7).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (8).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (9).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (10).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (11).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+                            <!--img src="PJOK (12).jpg" alt="Soal" class="responsive" width="1000" height="400"-->
+
+                            <!-- AKHIR SETTING IMAGE -->
+                            
+                    </td>
+                </table>
+            </div>
+
+            <!-- AKHIR TAMPILAN KIRI -->
+
+            <!-- TAMPILAN KANAN -->
+
+            <div class="cell b">
+                <table border="1" width="100%" align="center" class="tableUserInfo" >
+                    <td class="scrolling-box-b" align="center" >
+
+                        <!-- FORM LEMBAR JAWABAN -->
+                        <img src="almanar.png" alt="Logo" width="110" height="110">
+
+                        <p>DATA UJIAN</p>
+                            <form id="boundary" name="ujian-online">
+                                <select class="form-dropdown col-75" name="nama peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_5" required>
+                                    <option value=""> Pilih nama peserta </option>
+                                    <option value="AFGANSYAH PUTRA"> AFGANSYAH PUTRA </option>
+                                    <option value="AHMAD HAFIZH IHTIMAM"> AHMAD HAFIZH IHTIMAM </option>
+                                    <option value="AHMAD RAFI"> AHMAD RAFI </option>
+                                    <option value="ALI AZKA FAIQOTU DZIHNI"> ALI AZKA FAIQOTU DZIHNI </option>
+                                    <option value="ANGGER PRAMUDITA KENZIE"> ANGGER PRAMUDITA KENZIE </option>
+                                    <option value="ANINDITYA PUTRI SUSANTO"> ANINDITYA PUTRI SUSANTO </option>
+                                    <option value="ATHAYA RIFQIZA SETIAWAN"> ATHAYA RIFQIZA SETIAWAN </option>
+                                    <option value="AYUNDA KHANSA ZAHIRA"> AYUNDA KHANSA ZAHIRA </option>
+                                    <option value="CHOIRUNNISA FITRIANI"> CHOIRUNNISA FITRIANI </option>
+                                    <option value="DANISH AHMAD GAZARI"> DANISH AHMAD GAZARI </option>
+                                    <option value="DYANDRA LAILANDARU LESMANA"> DYANDRA LAILANDARU LESMANA </option>
+                                    <option value="FAJAR HINDRAWAN"> FAJAR HINDRAWAN </option>
+                                    <option value="FALIQ AZKA FIRASYAN"> FALIQ AZKA FIRASYAN </option>
+                                    <option value="HAFI RAIHANSYAH"> HAFI RAIHANSYAH </option>
+                                    <option value="HERMINA TITA HATI MULYONO"> HERMINA TITA HATI MULYONO </option>
+                                    <option value="JIBRAN BENZEMA ABDULLAH AZZAM"> JIBRAN BENZEMA ABDULLAH AZZAM </option>
+                                    <option value="KAMILIA PERMATA AYYASY"> KAMILIA PERMATA AYYASY </option>
+                                    <option value="KAYYISAH AQILA"> KAYYISAH AQILA </option>
+                                    <option value="KHADEEJA NAJLA PERMANA"> KHADEEJA NAJLA PERMANA </option>
+                                    <option value="LUQMAN FAWWAZ WARDANI"> LUQMAN FAWWAZ WARDANI </option>
+                                    <option value="MUHAMMAD AZZAM THAMRIN"> MUHAMMAD AZZAM THAMRIN </option>
+                                    <option value="MUHAMMAD HAYDAR RADIENSYAH"> MUHAMMAD HAYDAR RADIENSYAH </option>
+                                    <option value="MUHAMMAD YAHYA AYYASH"> MUHAMMAD YAHYA AYYASH </option>
+                                    <option value="NADHIRA TSABITA"> NADHIRA TSABITA </option>
+                                    <option value="NIKESHA SASI KIRANA DYIA WARDOYO"> NIKESHA SASI KIRANA DYIA WARDOYO </option>
+                                    <option value="NISRINA HAURA LATIFAH"> NISRINA HAURA LATIFAH </option>
+                                    <option value="QUEEN KALISTA FARRAH"> QUEEN KALISTA FARRAH </option>
+                                    <option value="QUNTUM NURANI JINGGA HERMANSYAH"> QUNTUM NURANI JINGGA HERMANSYAH </option>
+                                    <option value="RAFAN ABDURRAHMAN TAFTAZANI AL GHAZI"> RAFAN ABDURRAHMAN TAFTAZANI AL GHAZI </option>
+                                    <option value="RAIHANAH ZAHIDAH"> RAIHANAH ZAHIDAH </option>
+                                    <option value="RAZAN MUHAMMAD IHSAN"> RAZAN MUHAMMAD IHSAN </option>
+                                    <option value="SABRINA DAMIA RAMADHANI NUGRAHA"> SABRINA DAMIA RAMADHANI NUGRAHA </option>
+                                    <option value="SALMA ZAHIDAH"> SALMA ZAHIDAH </option>
+                                    <option value="SYABIL ZAIDAN VERYANO"> SYABIL ZAIDAN VERYANO </option>
+                                    <option value="TORIQ FAWAS NUGROHO"> TORIQ FAWAS NUGROHO </option>
+                                    <option value="TSABITA DHIYA ALMAGHFIRA"> TSABITA DHIYA ALMAGHFIRA </option>
+                                    <option value="UMAR HARUN ARRASYID"> UMAR HARUN ARRASYID </option>
+                                    <option value="YAFI ALTHAF RAZIQ"> YAFI ALTHAF RAZIQ </option>
+                                    <option value="YUSUF AULIA KAMIL"> YUSUF AULIA KAMIL </option>
+                                  </select>
+
+                              
+                                  <select class="form-dropdown col-75" id="input_6" name="nomor peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
+                                    <option value=""> Pilih nomor peserta </option>
+                                    <option value="2121210001"> 2121210001 </option>
+                                    <option value="2121210002"> 2121210002 </option>
+                                    <option value="2121210003"> 2121210003 </option>
+                                    <option value="2121210004"> 2121210004 </option>
+                                    <option value="2121210005"> 2121210005 </option>
+                                    <option value="2121210006"> 2121210006 </option>
+                                    <option value="2121210007"> 2121210007 </option>
+                                    <option value="2121210008"> 2121210008 </option>
+                                    <option value="2121210009"> 2121210009 </option>
+                                    <option value="2121210010"> 2121210010 </option>
+                                    <option value="2121210011"> 2121210011 </option>
+                                    <option value="2121210012"> 2121210012 </option>
+                                    <option value="2121210013"> 2121210013 </option>
+                                    <option value="2121210014"> 2121210014 </option>
+                                    <option value="2121210015"> 2121210015 </option>
+                                    <option value="2121210016"> 2121210016 </option>
+                                    <option value="2121210017"> 2121210017 </option>
+                                    <option value="2121210018"> 2121210018 </option>
+                                    <option value="2121210019"> 2121210019 </option>
+                                    <option value="2121210020"> 2121210020 </option>
+                                    <option value="2121210021"> 2121210021 </option>
+                                    <option value="2121210022"> 2121210022 </option>
+                                    <option value="2121210023"> 2121210023 </option>
+                                    <option value="2121210024"> 2121210024 </option>
+                                    <option value="2121210025"> 2121210025 </option>
+                                    <option value="2121210026"> 2121210026 </option>
+                                    <option value="2121210027"> 2121210027 </option>
+                                    <option value="2121210028"> 2121210028 </option>
+                                    <option value="2121210029"> 2121210029 </option>
+                                    <option value="2121210030"> 2121210030 </option>
+                                    <option value="2121210031"> 2121210031 </option>
+                                    <option value="2121210032"> 2121210032 </option>
+                                    <option value="2121210033"> 2121210033 </option>
+                                    <option value="2121210034"> 2121210034 </option>
+                                    <option value="2121210035"> 2121210035 </option>
+                                    <option value="2121210036"> 2121210036 </option>
+                                    <option value="2121210037"> 2121210037 </option>
+                                    <option value="2121210038"> 2121210038 </option>
+                                    <option value="2121210039"> 2121210039 </option>
+                                  </select>
+
+                                <br><input placeholder="Isi tanggal" class="form-dropdown col-75" type="text" onfocus="(this.type='date')" id="date" name="tanggal ujian" style="width:180px;" data-component="dropdown" aria-labelledby="label_5" required>
+
+                                <select class="form-dropdown col-75" name="mata uji" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
+                                    <option value=""> Pilih mata pelajaran </option>
+                                    <option value="Bahasa Indonesia"> Bahasa Indonesia </option>
+                                    <option value="Bahasa Inggris"> Bahasa Inggris </option>
+                                    <option value="PAI"> PAI </option>
+                                    <option value="IPS"> IPS </option>
+                                    <option value="Matematika"> Matematika </option>
+                                    <option value="PAI"> PAI </option>
+                                    <option value="PJOK"> PJOK </option>
+                                    <option value="PKN"> PKN </option>
+                                    <option value="SBdP"> SBdP </option>
+                                </select>
+                                <hr style="height: 5px; color: black;">
+
+                                <p>LEMBAR JAWABAN</p>
+                                
+                                <p><select name="pg 1"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">1</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 2"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">2</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 3"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">3</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 4"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">4</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 5"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">5</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select></P>
+                                <P><select name="pg 6"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">6</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 7"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">7</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 8"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">8</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 9"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">9</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 10"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">10</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select></p>
+                                <p><select name="pg 11"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">11</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 12"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">12</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 13"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">13</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 14"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">14</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 15"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">15</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+
+                                <br><span id="habisPG1" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 1 - 15</button></span></p>
+
+                                <p><select name="pg 16"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">16</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 17"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">17</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 18"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">18</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 19"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">19</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 20"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">20</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select></p>
+                                <p><select name="pg 21"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">21</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 22"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">22</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 23"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">23</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 24"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">24</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 25"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">25</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select></p>
+                                <p><select name="pg 26"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">26</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 27"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">27</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 28"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">28</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 29"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">29</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 30"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">30</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+
+                                <br><span id="habisPG2" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 16 - 30</button></span></p>
+
+                                <p><select name="pg 31"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">31</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 32"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">32</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 33"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">33</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 34"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">34</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 35"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">35</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select></p>
+                                <p><select name="pg 36"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">36</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 37"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">37</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 38"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">38</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 39"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">39</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+                                <select name="pg 40"
+                                    onchange="this.className=this.options[this.selectedIndex].className">
+                                    <option value="">40</option>
+                                    <option class="redText" value="A" >A</option>
+                                    <option class="yellowText" value="B" >B</option>
+                                    <option class="orangeText" value="C" >C</option>
+                                    <option class="blueText" value="D" >D</option>
+                                </select>
+
+                                <br><span id="habisPG3" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 31 - 40</button></span></p>
+
+                    <!-- AKHIR FORM LEMBAR JAWABAN -->
+
+                    </td>
+                </table>
+               
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+
+        <script>
+
+        // SETTING WAKTU SELESAI MENGERJAKAN SOAL
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 26, 2021 19:18:00").getTime(); // SESUAIKAN WAKTU
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("timer").innerHTML = hours + "j "
+        + minutes + "m " + seconds + "d ";
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            alert ("Waktu jam pertama telah habis, jawaban terakhir kamu tidak dapat disimpan. Silahkan klik Download LJ untuk mengirim jawaban terakhir kamu ke Pengawas!");
+            document.getElementById("habisTimer").innerHTML = "Waktu habis";
+            document.getElementById("habisPG").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+            document.getElementById("habisIsian").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+            document.getElementById("habisEssay").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+        }
+
+        }, 1000);
+
+        // ALERT REFRESH
+
+        $(window).bind('beforeunload', function(){
+            return "Do you want to exit this page?";
+        });
+
+        // ALERT NYONTEK
+
+        function handleVisibilityChange() {
+        if(document.hidden) {
+           alert ("Allah Maha Melihat! Prestasi penting, Jujur yang utama!");
+        }}
+
+        //document.addEventListener("visibilitychange", handleVisibilityChange, false);
+                    
+        // SPLIT LAYAR
+        
+        Split(['.a', '.b'], {
+            gutterSize: 5,
+            sizes: [50,50],
+            minSize: [390,520]
+        });
+
+        // SCREENSHOOT
+
+        document.getElementById("download").addEventListener("click", function() {
+            html2canvas(document.querySelector('#boundary')).then(function(canvas) {
+            saveAs(canvas.toDataURL(), 'Ubah nama.jpg');
+            });
+        });
+
+        function saveAs(uri, filename) {
+
+            var link = document.createElement('a');
+
+            if (typeof link.download === 'string') {
+
+                link.href = uri;
+                link.download = filename;
+
+                //Firefox requires the link to be in the body
+                document.body.appendChild(link);
+
+                //simulate click
+                link.click();
+
+                //remove the link when done
+                document.body.removeChild(link);
+                alert ("Silahkan periksa hasil download LJ di bawah ini kemudian kirim ke Pengawas!");
+
+                } else {
+
+                window.open(uri);
+
+                }
+            }
+            
+        // SEND TO GOOGLE SHEET
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyxkpYeSI-dlanYAzTzhNVQtsOsxxNkWsJG6Z3fOPXcai6TkPuJg7GDFPtiI_SAQffp4Q/exec'
+            const form = document.forms['ujian-online'];
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+
+                console.log('Success!', response)
+
+                alert ("Jawaban kamu telah tersimpan.");
+                })
+
+                .catch(error => {
+                
+                alert("Jawaban kamu gagal tersimpan. Silahkan klik Download LJ untuk menyimpan jawaban kamu saat ini!");
+                
+                console.error('Error!', error.message)
+                })
+            })
+        </script>
+    </body>
+
+</html>
