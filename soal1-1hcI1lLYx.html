@@ -106,7 +106,7 @@
                                   </select>
 
                               
-                                  <select class="form-dropdown col-75" id="input_6" name="nomor peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
+                                  <select class="form-dropdown col-75" name="nomor peserta" style="width:180px" data-component="dropdown" aria-labelledby="label_6" required>
                                     <option value=""> Pilih nomor peserta </option>
                                     <option value="2121210001"> 2121210001 </option>
                                     <option value="2121210002"> 2121210002 </option>
@@ -288,7 +288,7 @@
                                     <option class="blueText" value="D" >D</option>
                                 </select>
 
-                                <br><span id="habisPG1" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 1 - 15</button></span></p>
+                                <br><span id="habis1-15" style="color: red;"><button type="submit" class="btn-simpan simpan">SIMPAN JAWABAN 1 - 15</button></span></p>
 
                                 <p><select name="pg 16"
                                     onchange="this.className=this.options[this.selectedIndex].className">
@@ -411,7 +411,7 @@
                                     <option class="blueText" value="D" >D</option>
                                 </select>
 
-                                <br><span id="habisPG2" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 16 - 30</button></span></p>
+                                <br><span id="habis16-30" style="color: red;"><button type="submit" class="btn-simpan simpan">SIMPAN JAWABAN 16 - 30</button></span></p>
 
                                 <p><select name="pg 31"
                                     onchange="this.className=this.options[this.selectedIndex].className">
@@ -494,9 +494,9 @@
                                     <option class="blueText" value="D" >D</option>
                                 </select>
 
-                                <br><span id="habisPG3" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 31 - 40</button></span></p>
+                                <br><span id="habis31-40" style="color: red;"><button type="submit" class="btn-simpan simpan">SIMPAN JAWABAN 31 - 40</button></span></p>
                             </form>
-
+                            
                     <!-- AKHIR FORM LEMBAR JAWABAN -->
                             
                     </td>
@@ -538,9 +538,9 @@
             clearInterval(x);
             alert ("Waktu jam pertama telah habis, jawaban terakhir kamu tidak dapat disimpan. Silahkan klik Download LJ untuk mengirim jawaban terakhir kamu ke Pengawas!");
             document.getElementById("habisTimer").innerHTML = "Waktu habis";
-            document.getElementById("habisPG").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
-            document.getElementById("habisIsian").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
-            document.getElementById("habisEssay").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+            document.getElementById("habis1-15").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+            document.getElementById("habis16-30").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
+            document.getElementById("habis31-40").innerHTML = "Waktu habis, jawaban tidak dapat disimpan";
         }
 
         }, 1000);
@@ -558,7 +558,7 @@
            alert ("Allah Maha Melihat! Prestasi penting, Jujur yang utama!");
         }}
 
-        //document.addEventListener("visibilitychange", handleVisibilityChange, false);
+        document.addEventListener("visibilitychange", handleVisibilityChange, false);
                     
         // SPLIT LAYAR
         
@@ -604,7 +604,7 @@
             
         // SEND TO GOOGLE SHEET
 
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyxkpYeSI-dlanYAzTzhNVQtsOsxxNkWsJG6Z3fOPXcai6TkPuJg7GDFPtiI_SAQffp4Q/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx3I_uUaiGkVggCn9hTnx60jJwJFKwgbybseFD-X9o5AglLUXAfc_Rfz1ubs_vXjbToeg/exec'
             const form = document.forms['ujian-online'];
         
             form.addEventListener('submit', e => {
