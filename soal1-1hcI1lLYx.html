@@ -495,9 +495,10 @@
                                 </select>
 
                                 <br><span id="habisPG3" style="color: red;"><button type="submitPG" class="btn-simpan simpan" id="submit">SIMPAN JAWABAN 31 - 40</button></span></p>
+                            </form>
 
                     <!-- AKHIR FORM LEMBAR JAWABAN -->
-
+                            
                     </td>
                 </table>
                
@@ -557,7 +558,7 @@
            alert ("Allah Maha Melihat! Prestasi penting, Jujur yang utama!");
         }}
 
-        document.addEventListener("visibilitychange", handleVisibilityChange, false);
+        //document.addEventListener("visibilitychange", handleVisibilityChange, false);
                     
         // SPLIT LAYAR
         
@@ -603,7 +604,7 @@
             
         // SEND TO GOOGLE SHEET
 
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwUwaEPwR6MaNss4JGg8mgqP3lqK7a0Zekd8OxF2zRfY5ZpC2FDA2sP0Bb-CZKVEyz-mQ/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyxkpYeSI-dlanYAzTzhNVQtsOsxxNkWsJG6Z3fOPXcai6TkPuJg7GDFPtiI_SAQffp4Q/exec'
             const form = document.forms['ujian-online'];
         
             form.addEventListener('submit', e => {
