@@ -59,6 +59,7 @@
     background-color: #f1f1f1;
   }
 </style>
+
 <body>
 
 <!-- Header -->
@@ -90,26 +91,28 @@
 </div>
 
 <!-- Second Grid -->
-<div id="selesai" class="w3-row-padding w3-padding-48 w3-container w3-light-gray">
+<div class="w3-row-padding w3-padding-48 w3-container w3-light-gray">
   <div class="w3-content">
     <div>
+      <img src="Jadwal.jpeg" class="img-fluid" alt="Responsive image" style="margin-top: 42px;">
+      <hr style="height: 5px; color: black;">
       <center style="font-size: 30px;">JADWAL HARI INI</center>
 
-      <center><button id="warning" class="btn btn-danger">Soal akan terbuka <span id="timer"></span> lagi</center>
+      <center><button id="warning" class="btn btn-danger">Soal akan terbuka <span id="timer"></span> lagi. </button></center>
 
       <br>
       <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div  class="text-center">
-                  <button id="btnjam1" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">IPA</button>
+                  <button id="btnSoal" type="button" class="btn btn-outline-dark btn-lg" style="font-size: 20px;">SBdP</button> <!--Ganti MMP sesuai jadwal-->
                 </div>
             </div>
         </div>
       </div>
-
     </div>
-</div>
+
+  </div>
 </div>
 
 <!-- Footer -->
@@ -139,7 +142,7 @@
                                                                       //SETTING WAKTU MUNCUL TOMBOL UJIAN JAM PERTAMA
 
     // Set the date we're counting down to
-    var countDownDateOn1 = new Date("April 21, 2021 09:15:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDateOn1 = new Date("May 4, 2021 08:00:00").getTime(); // Ganti tanggal dan jam sesuai jadwal
 
     // Update the count down every 1 second
     var xOn1 = setInterval(function() {
@@ -160,18 +163,18 @@
     document.getElementById("timer").innerHTML = hoursOn1 + "j " + minutesOn1 + "m " + secondsOn1 + "d ";
         
     // If the count down is over, write some text 
-    var jadwal1 = "IPA";
-    var soal1 = jadwal1.link("https://sditalmanar.github.io/soal1hcI1lLYx.html");
+    var jadwal1 = "SBdP"; //Ganti MMP sesuai jadwal
+    var soal1 = jadwal1.link("https://sditalmanar.github.io/sbdp1VzRWBIbr3r8hXvQT1agAxeWUwLQukZ1a.html"); //Ganti link sesuai jadwal
     if (distanceOn1 < 0) {
         clearInterval(xOn1);
         document.getElementById("warning").innerHTML = "Link soal telah dibuka, silahkan klik tombol di bawah ini!";
-        document.getElementById("btnjam1").innerHTML = soal1;
+        document.getElementById("btnSoal").innerHTML = soal1;
     }}, 1000);
 
                                                                     //SETTING WAKTU MENGHILANGKAN LAMAN LINK SOAL
 
     // Set the date we're counting down to
-    var countDownDate2 = new Date("April 21, 2021 09:17:00").getTime(); // SESUAIKAN WAKTU
+    var countDownDate2 = new Date("May 4, 2021 10:00:00").getTime(); // Ganti tanggal dan jam sesuai jadwal
 
     // Update the count down every 1 second
     var x2 = setInterval(function() {
@@ -185,7 +188,8 @@
     // If the count down is over, write some text 
     if (distance2 < 0) {
           clearInterval(x2);
-          var elem2 = document.getElementById('selesai');
+          document.getElementById("warning").innerHTML = "Link soal telah ditutup, sampai jumpa di jadwal selanjutnya!";
+          var elem2 = document.getElementById('btnSoal');
           elem2.parentNode.removeChild(elem2);
           return false;
           }}, 1000)
